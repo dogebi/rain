@@ -11,10 +11,10 @@ Easiest install: use `skills` CLI.
 To install one skill directly to one agent:
 
     # Codex global install
-    npx skills@latest add dogebi/rain --skill ai-news-5d-trends --agent codex --global --yes
+    npx skills@latest add dogebi/rain -g --skill ai-news-5d-trends -a codex -y
 
     # Claude Code global install
-    npx skills@latest add dogebi/rain --skill ai-news-5d-trends --agent claude-code --global --yes
+    npx skills@latest add dogebi/rain -g --skill ai-news-5d-trends -a claude-code -y
 
 List skills without installing:
 
@@ -32,7 +32,7 @@ Then open Codex and run:
 
 Update marketplace later:
 
-    codex plugin marketplace upgrade rain
+    codex plugin marketplace upgrade dogebi-marketplace
 
 ## Skills
 
