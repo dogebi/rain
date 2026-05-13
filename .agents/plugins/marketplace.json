@@ -1,13 +1,21 @@
 {
+  "name": "dogebi-marketplace",
+  "interface": {
+    "displayName": "dogebi"
+  },
   "plugins": [
     {
       "name": "rain",
       "description": "AI news 5-day clipping skill (table + trend notes).",
       "source": {
-        "type": "github",
+        "source": "github",
         "repo": "dogebi/rain"
-      }
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "NONE"
+      },
+      "category": "Coding"
     }
   ]
 }
-
