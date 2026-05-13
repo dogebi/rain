@@ -472,6 +472,12 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         os.makedirs(os.path.dirname(ns.out) or ".", exist_ok=True)
         open(ns.out, "w", encoding="utf-8").write(md)
     else:
+        # Windows console can default to a legacy codepage (e.g., GBK/CP936) which
+        # can't represent Korean/Japanese titles. Force UTF-8 best-effort.
+        try:
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[attr-defined]
+        except Exception:
+            pass
         sys.stdout.write(md)
     return 0
 
