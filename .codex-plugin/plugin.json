@@ -1,0 +1,9 @@
+{
+  "name": "rain",
+  "version": "0.1.0",
+  "description": "AI news 5-day clipping skill (artificialanalysis.ai, Claude Code docs, GeekNews, OpenAI Developers) -> table + trend notes.",
+  "author": "dogebi",
+  "license": "MIT",
+  "skills": ["./ai-news-5d-trends"]
+}
+

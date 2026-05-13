@@ -26,11 +26,11 @@ You produce a 5-day AI news brief as a Markdown table and short trend notes. Kee
 ## Workflow (recommended)
 
 1. Install deps (first time only):
-   - `python -m pip install -r scripts/requirements.txt`
+   - `python -m pip install -r ai-news-5d-trends/scripts/requirements.txt`
 2. Generate brief for last 5 days:
-   - `python scripts/ai_news_5d.py --days 5 --out out/ai-news-5d.md`
+   - `python ai-news-5d-trends/scripts/ai_news_5d.py --days 5 --out out/ai-news-5d.md`
 3. If you are inside the user’s self-wiki repo (has `raw/` + `wiki/`), also update today’s daily capture:
-   - `python scripts/ai_news_5d.py --days 5 --update-daily raw/informations/daily/YYYY-MM-DD.md`
+   - `python ai-news-5d-trends/scripts/ai_news_5d.py --days 5 --update-daily raw/informations/daily/YYYY-MM-DD.md`
    - This writes into marker `AUTO-08-AI-NEWS-5DAY` (replace if exists, append if missing).
 
 ## Notes / Constraints
@@ -38,4 +38,3 @@ You produce a 5-day AI news brief as a Markdown table and short trend notes. Kee
 - Prefer official pages and dated items; skip undated items rather than guessing recency.
 - If a source is blocked/unavailable, still produce the report and note the missing source in stderr output.
 - Do not include secrets, cookies, or authenticated scraping.
-

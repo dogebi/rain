@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    {
+      "name": "rain",
+      "description": "AI news 5-day clipping skill (table + trend notes).",
+      "source": {
+        "type": "github",
+        "repo": "dogebi/rain"
+      }
+    }
+  ]
+}
+

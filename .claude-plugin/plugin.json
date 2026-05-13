@@ -1,0 +1,7 @@
+{
+  "name": "rain",
+  "version": "0.1.0",
+  "description": "AI news 5-day clipping skill (table + trend notes).",
+  "skills": ["./ai-news-5d-trends"]
+}
+
